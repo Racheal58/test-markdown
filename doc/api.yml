@@ -15,6 +15,6 @@ paths:
     get:
       summary: Best practices.
       description: |
-        [Read the Patterns.md file here](./docs/bestPractices/Patterns.md)
+        [Read the Patterns.md file here](./docs/bestPractices/Patterns.md) value
       tags:
-        - Practices
+        - Practices Test
