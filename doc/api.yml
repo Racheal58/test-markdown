@@ -11,9 +11,10 @@ servers:
     description: Optional server description, e.g. Internal staging server for testing
 
 paths:
-  /docs/bestPractices/Patterns.md
-  /docs/bestPractices/Practices.md
-  /docs/bestPractices/Schemas.md
-  /docs/bestPractices/Strategy.md
-  /docs/Fundamentals/Schema.md
-  /docs/Fundamentals/Validation.md
+  /docs/bestPractices:
+    get:
+      summary: Best practices.
+      description: |
+        Practices.md
+      tags:
+        - Practices
