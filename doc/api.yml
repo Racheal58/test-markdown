@@ -15,21 +15,6 @@ paths:
     get:
       summary: Best practices.
       description: |
-        Practices.md
+        [Read the Patterns.md file here](./docs/bestPractices/Patterns.md)
       tags:
         - Practices
-      operationId: getBestPractices
-      responses:
-        '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  exampleProperty:
-                    type: string
-      x-steps:
-        - name: Print Markdown File Path
-          run: |
-            echo "The path to the markdown file is: ./docs/bestPractices/Patterns.md"
