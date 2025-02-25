@@ -18,3 +18,7 @@ paths:
         Practices.md
       tags:
         - Practices
+      steps:
+          - name: Print Markdown File Path
+        run: |
+          echo "The path to the markdown file is: ./docs/bestPractices/Patterns.md"
