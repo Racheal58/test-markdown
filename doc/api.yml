@@ -11,10 +11,9 @@ servers:
     description: Optional server description, e.g. Internal staging server for testing
 
 paths:
-  /documentation:
-    get:
-      summary: Returns a list of users.
-      description: |
-        This the text I'm updating run script add yaml file
-      tags:
-        - Automation Test
+  /docs/bestPractices/Patterns.md
+  /docs/bestPractices/Practices.md
+  /docs/bestPractices/Schemas.md
+  /docs/bestPractices/Strategy.md
+  /docs/Fundamentals/Schema.md
+  /docs/Fundamentals/Validation.md
