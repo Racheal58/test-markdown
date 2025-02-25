@@ -15,6 +15,6 @@ paths:
     get:
       summary: Returns a list of users.
       description: |
-        This the text I'm uspdating run scripts
+        This the text I'm updating run scripts
       tags:
         - Automation Test
