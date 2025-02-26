@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: Sample API
   description: 
-    $ref: '../docs/gettingStarted/Data.md'
+    $ref: ../docs/gettingStarted/Data.md
   version: 0.1.9
 
 servers:
@@ -13,11 +13,11 @@ servers:
 
 x-docs:
   Guides: 
-    $ref: '../docs/guides/Guides.md'
+    $ref: ../docs/guides/Guides.md
 tags:
   - name: Overview
     description:
-      $ref: '../docs/bestPractices/Patterns.md'
+      $ref: ../docs/bestPractices/Patterns.md
   - name: Getting Started
     description:
-      $ref: '../docs/gettingStarted/Data.md'
+      $ref: ../docs/gettingStarted/Data.md
