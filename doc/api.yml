@@ -5,5 +5,5 @@ info:
 x-docs:
   Overview: []
   GettingStarted:
-    - ./docs/gettingStarted/Strands.md
+    - ../docs/gettingStarted/Strands.md
 paths: {}
