@@ -18,7 +18,7 @@ jobs:
       - name: Update Documentation on Theneo
         uses: Theneo-Inc/api-documentation@1.8.0
         with:
-          FILE_PATH: docs
+          FILE_PATH: doc/api.yml
 
           PROJECT_SLUG: test-markdown
           WORKSPACE_SLUG: racheal-test-theneo
