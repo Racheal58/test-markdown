@@ -10,11 +10,10 @@ servers:
   - url: http://staging-api.example.com
     description: Optional server description, e.g. Internal staging server for testing
 
-paths:
-  /docs/bestPractices:
-    get:
-      summary: Test markdown
-      description: 
-        $ref: ../docs/bestPractices/Patterns.md
-      tags:
-        - Practices
+tags:
+  - name: Overview
+    description:
+      $ref: ./docs/bestPractices/Patterns.md
+  - name: Getting Started
+    description:
+      $ref: ./docs/gettingStarted/Data.md
