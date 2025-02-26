@@ -12,9 +12,9 @@ servers:
 
 paths:
   /docs/bestPractices:
-    summary: Best practices.
+    get:
+      summary: Best practices.
       description: |
         [Read the Patterns.md file here](./docs/bestPractices/Patterns.md)
-      get:
       tags:
         - Practices
