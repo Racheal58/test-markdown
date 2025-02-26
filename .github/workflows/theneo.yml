@@ -27,7 +27,7 @@ jobs:
 
           AUTO_PUBLISH: true
 
-          IMPORT_OPTION: merge
+          IMPORT_OPTION: overwrite
           PARAMETER_DESCRIPTION_MERGE_STRATEGY: keep_new
           SECTION_DESCRIPTION_MERGE_STRATEGY: keep_old
 
