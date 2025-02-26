@@ -16,25 +16,19 @@ jobs:
         with:
           node-version: "18"
       - name: Update Documentation on Theneo
-        run: |
-          npm install -g @theneo/cli@latest
-          theneo login --token e41cc714-a947-4b20-b09f-62975cb139a6
-          ls -al
-          theneo project list
-          theneo project import --project test-markdown --workspace racheal-test-theneo --projectVersion v1 --publish --file doc/api.yml --import-type overwrite
-        # uses: Theneo-Inc/api-documentation@1.8.0
-        # with:
-        #   FILE_PATH: doc/api.yml
+        uses: Theneo-Inc/api-documentation@1.8.0
+        with:
+          FILE_PATH: docs
 
-        #   PROJECT_SLUG: test-markdown
-        #   WORKSPACE_SLUG: racheal-test-theneo
+          PROJECT_SLUG: test-markdown
+          WORKSPACE_SLUG: racheal-test-theneo
 
-        #   SECRET: ${{secrets.SECRET}}
+          SECRET: ${{secrets.SECRET}}
 
-        #   AUTO_PUBLISH: true
+          AUTO_PUBLISH: true
 
-        #   IMPORT_OPTION: merge
-        #   PARAMETER_DESCRIPTION_MERGE_STRATEGY: keep_new
-        #   SECTION_DESCRIPTION_MERGE_STRATEGY: keep_old
+          IMPORT_OPTION: merge
+          PARAMETER_DESCRIPTION_MERGE_STRATEGY: keep_new
+          SECTION_DESCRIPTION_MERGE_STRATEGY: keep_old
 
-        #   INCLUDE_GITHUB_METADATA: true
+          INCLUDE_GITHUB_METADATA: true
