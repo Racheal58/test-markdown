@@ -1,38 +1,20 @@
 openapi: 3.0.0
 info:
-  title: My API
-  version: "1.0"
-x-docs:
-  Overview: []
-  GettingStarted:
-    - Get started with Strands.md
-    - Core concepts.md
-    - Quickstart_API_development.md
-    - Quickstart_Data_governance.md
-    - Quickstart_Research_data.md
-  Fundamentals:
-    - Introduction_to_JSON_Schema.md
-    - Basics_of_schema_validation.md
-  BestPractices:
-    - JSON_Schema_best_practices.md
-    - Schema_design_patterns.md
-    - Schema_versioning_strategy.md
-    - Managing_breaking_changes_in_schemas.md
-  Guides:
-    - No-code_schema_editor_guide.md
-    - Structure_research_data_with_JSON_schemas.md
-    - Schema_lifecycle_and_version_management.md
-  TroubleshootingFAQs:
-    - Common_errors_and_fixes.md
-    - Debug_schema_validation_issues.md
-    - FAQs.md
-  UseCases:
-    - Using_Strands_for_API_schema_management.md
-    - Ensuring_data_consistency_in_large_enterprises.md
-    - Collaborating_on_JSON_schemas_in_research_projects.md
-    - Improving_data_governance_with_Strands.md
-  ProductUpdatesAndSupport:
-    - Release_notes.md
-    - Support_and_feedback.md
-    - Strands_roadmap.md
-paths: {}
+  title: Sample API
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  version: 0.1.9
+
+servers:
+  - url: http://api.example.com/v1
+    description: Optional server description, e.g. Main (production) server
+  - url: http://staging-api.example.com
+    description: Optional server description, e.g. Internal staging server for testing
+
+paths:
+  /docs/bestPractices:
+    get:
+      summary: Test markdown
+      description: |
+        [Read the Patterns.md file here](./docs/bestPractices/Patterns.md)
+      tags:
+        - Practices
